@@ -1,7 +1,7 @@
 ---
 title: "How to have paramaters in an external file for CloudFormation"
-date: 2022-04-03T23:15:00+07:00
-slug: what-is-bioinformatics
+date: 2021-06-27T23:15:00+07:00
+slug: parameters-in-external-file-using-cloudformation
 category: cloudformation
 description: "A guide explaining how to split parameters and templates in separate files in CloudFormation"
 draft: false
