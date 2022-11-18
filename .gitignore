@@ -25,4 +25,3 @@ _testmain.go
 app/public
 .DS_Store
 *.hugo_build.lock*
-app/themes/
