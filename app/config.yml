@@ -1,7 +1,7 @@
 languageCode: en-us
 baseURL: "https://caiogomes.me"
 title: Caio Gomes
-paginate: 5
+paginate: 100
 theme: PaperMod
 
 enableRobotsTXT: true
