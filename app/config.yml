@@ -53,7 +53,7 @@ params:
     imageUrl: "images/general/face-photo.jpeg"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: "Data Professor"
+    imageTitle: "Caio Gomes"
     buttons:
       - name: Blog
         url: posts
