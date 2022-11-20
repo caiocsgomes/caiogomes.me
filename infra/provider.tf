@@ -6,9 +6,9 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "caiogomes.me-tf-backend"
-    key    = "state/terraform.tfstate"
-    region = "sa-east-1"
+    bucket         = "caiogomes.me-tf-backend"
+    key            = "state/terraform.tfstate"
+    region         = "sa-east-1"
     dynamodb_table = "caiogomes.me-tf-backend"
   }
 }

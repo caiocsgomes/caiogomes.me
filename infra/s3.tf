@@ -1,5 +1,14 @@
 resource "aws_s3_bucket" "s3_app_bucket" {
   bucket = "${var.project_name}-app-bucket"
+
+  tags = {
+    "Name" = "${var.project_name}-app-bucket"
+  }
+}
+
+resource "aws_s3_bucket_acl" "s3_app_bucket_acl" {
+  bucket = aws_s3_bucket.s3_app_bucket.id
+  acl    = "private"
 }
 
 resource "aws_s3_bucket_website_configuration" "example" {
