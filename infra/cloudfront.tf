@@ -29,7 +29,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     prefix          = "logs"
   }
 
-  #   aliases = ["caiogomes.me"]
+  aliases = ["caiogomes.me"]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
@@ -87,7 +87,8 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn = aws_acm_certificate.cert.arn
+    ssl_support_method  = "sni-only"
   }
 }
 
