@@ -30,9 +30,11 @@ resource "aws_s3_bucket_policy" "allow_access_from_cloudfront" {
 
 data "aws_iam_policy_document" "allow_access_from_cloudfront" {
   statement {
+    sid = "Allow GET requests originating requests using the Referer header for ${var.project_name}"
+
     principals {
-      type        = "Service"
-      identifiers = ["cloudfront.amazonaws.com"]
+      identifiers = ["*"]
+      type        = "*"
     }
 
     actions = [
@@ -46,9 +48,9 @@ data "aws_iam_policy_document" "allow_access_from_cloudfront" {
     ]
 
     condition {
-      test     = "StringEquals"
-      variable = "AWS:SourceArn"
-      values   = ["${aws_cloudfront_distribution.s3_distribution.arn}"]
+      test     = "StringLike"
+      variable = "AWS:Referer"
+      values   = ["${random_string.random.result}"]
     }
   }
 }

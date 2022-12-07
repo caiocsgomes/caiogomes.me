@@ -30,4 +30,5 @@ hugo server
 
 # Notes
 
-1. terraform -chdir=backend/ apply -var project_name="caiogomes.me"
+- terraform -chdir=backend/ apply -var project_name="caiogomes.me"
+- https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serve-static-website/

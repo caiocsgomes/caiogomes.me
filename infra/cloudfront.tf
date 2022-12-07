@@ -13,9 +13,18 @@ resource "aws_cloudfront_origin_access_control" "origin_access_control" {
 
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
-    domain_name              = aws_s3_bucket.s3_app_bucket.bucket_regional_domain_name
-    origin_access_control_id = aws_cloudfront_origin_access_control.origin_access_control.id
-    origin_id                = local.s3_origin_id
+    domain_name = aws_s3_bucket_website_configuration.s3_website_config.website_endpoint
+    origin_id   = local.s3_origin_id
+    custom_origin_config {
+      http_port              = "80"
+      https_port             = "443"
+      origin_protocol_policy = "http-only"
+      origin_ssl_protocols   = ["TLSv1", "TLSv1.1", "TLSv1.2"]
+    }
+    custom_header {
+      name  = "Referer"
+      value = random_string.random.result
+    }
   }
 
   enabled             = true
