@@ -6,6 +6,18 @@ resource "aws_s3_bucket" "s3_app_bucket" {
   }
 }
 
+resource "aws_s3_bucket_website_configuration" "s3_website_config" {
+  bucket = aws_s3_bucket.s3_app_bucket.bucket
+
+  index_document {
+    suffix = "index.html"
+  }
+
+  error_document {
+    key = "404.html"
+  }
+}
+
 resource "aws_s3_bucket_acl" "s3_app_bucket_acl" {
   bucket = aws_s3_bucket.s3_app_bucket.id
   acl    = "private"
