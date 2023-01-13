@@ -8,10 +8,7 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     steps:
         - name: Checkout repository
-          uses: actions/checkout@master
-        
-        - name: Checkout submodules
-          uses: textbook/git-checkout-submodule-action@master
+          run: git clone --recurse-submodules https://github.com/caiocsgomes/caiogomes.me.git
 
         - name: Install hugo
           run: sudo apt install hugo
