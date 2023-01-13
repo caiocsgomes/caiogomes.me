@@ -14,7 +14,7 @@ jobs:
           run: sudo apt install hugo
 
         - name: Build
-          run: cd app && hugo
+          run: cd app/ && hugo
 
         - name: Deploy
           uses: reggionick/s3-deploy@v3
