@@ -10,11 +10,14 @@ jobs:
         - name: Checkout repository
           run: git clone --recurse-submodules https://github.com/caiocsgomes/caiogomes.me.git
 
+        - name: Listing folders
+          run: ls -lha
+
         - name: Install hugo
           run: sudo apt install hugo
 
         - name: Build
-          run: cd app/ && hugo
+          run: cd caiogomes.me/app/ && hugo
 
         - name: Deploy
           uses: reggionick/s3-deploy@v3
@@ -27,4 +30,4 @@ jobs:
             delete-removed: true
             no-cache: true
             private: true
-            filesToInclude: "app/public/*"
+            filesToInclude: "caiogomes.me/app/public/*"
