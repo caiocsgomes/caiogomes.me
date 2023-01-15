@@ -42,8 +42,12 @@ params:
 
   label:
     text: "Caio Gomes"
-    icon: "images/coding.png"
+    # icon: "/images/icons/programmer.png"
     iconHeight: 35
+  
+  assets:
+    disableHLJS: true 
+    favicon: "/images/icons/programmer.png"
 
   # profile-mode
   profileMode:
@@ -114,7 +118,7 @@ menu:
     #   weight: 4
     - identifier: blog
       name: Blog
-      url: /posts/
+      url: /posts
       weight: 1
     # - identifier: projects
     #   name: Projects
@@ -125,3 +129,4 @@ menu:
     #  name: tags
     #  url: /tags/
     #  weight: 4
+
