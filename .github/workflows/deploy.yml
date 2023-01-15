@@ -1,10 +1,18 @@
+# Workflow name
 name: S3 Deploy
+
+# Event. Everytime something changes in the repository GitHub fires an Event. For example, a push will fire a push event, opening an issue will open a issue event and so on.
+# When an event fires GitHub compares the event with the 'on' section and if the event is the same the workflow is started. So in the code below everytime a push is made
+# the workflow is started, but that's not all. We just want the event to be started if the 'app' changes or if we change our workflow 'github/workflows/deploy.yml', so we add
+# a filter to only start the workflow if the change is made in this folder or file.
 on:
   workflow_dispatch:
   push:
     paths:
       - 'app/**'
       - '.github/workflows/deploy.yml'
+
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
