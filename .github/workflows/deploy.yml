@@ -13,7 +13,7 @@ jobs:
       AWS_DEFAULT_REGION: sa-east-1
     steps:
         - name: Checkout repository
-          run: git clone --recurse-submodules https://github.com/caiocsgomes/caiogomes.me.git
+          run: git clone --recurse-submodules ${{ github.repositoryUrl }}
 
         - name: Listing folders
           run: ls -lha
