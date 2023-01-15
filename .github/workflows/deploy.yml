@@ -39,7 +39,7 @@ jobs:
           run: export AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} && export AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
         - name: Upload files to S3
-          run: aws s3 sync app/public s3://${{ env.BUCKET_NAME }}/ --delete --exact-timestamps
+          run: aws s3 sync app/public s3://${{ env.BUCKET_NAME }}/ --exact-timestamps
 
   create-cloudfront-invalidation:
     needs: build-and-deploy
