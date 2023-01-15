@@ -1,7 +1,7 @@
 ---
 title: "How to use SSM parameters in CloudFormation"
 date: 2021-07-17T23:15:00+07:00
-slug: dependson-with-cloudformation
+slug: cf-parameters-ssm-parameter-store
 category: cloudformation
 description: "A guide explaining how to use Systems Manager Parameter Store parameters in CloudFormation"
 draft: false

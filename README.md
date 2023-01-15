@@ -28,7 +28,6 @@ hugo server
 ```
 
 
-# Notes
+# Creating a Hugo website and deploying it so S3 using Github Actions
 
-- terraform -chdir=backend/ apply -var project_name="caiogomes.me"
-- https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serve-static-website/
+https://caiogomes.me/posts/gha-pipeline-hugo/dependson-with-cloudformation/
