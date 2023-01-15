@@ -3,7 +3,7 @@ on:
   push:
     paths:
       - 'app/**'
-      - '.github/deploy.yml'
+      - '.github/workflows/deploy.yml'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
