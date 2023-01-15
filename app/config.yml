@@ -129,4 +129,9 @@ menu:
     #  name: tags
     #  url: /tags/
     #  weight: 4
+markup:
+  defaultMarkdownHandler: blackFriday
+  blackFriday:
+    hrefTargetBlank: true
+
 
