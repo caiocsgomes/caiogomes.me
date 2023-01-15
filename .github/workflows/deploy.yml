@@ -1,5 +1,9 @@
-name: Example workflow for S3 Deploy
-on: [push]
+name: S3 Deploy
+on: 
+  push:
+    paths:
+      - 'app/**'
+      - '.github/deploy'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
