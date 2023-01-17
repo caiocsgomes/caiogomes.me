@@ -18,7 +18,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: CaioGomes
-  description: "This is the website of Caio Gomes. I usually post about DevOps, AWS and Linux."
+  description: "I'm Caio and I work with DevOps and Cloud. I usually write about Pipelines, AWS, Python and Linux."
   keywords: [Blog, Portfolio, DevOps]
   author: Caio Gomes
   # author: ["Me", "You"] # multiple authors
