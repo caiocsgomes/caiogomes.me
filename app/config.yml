@@ -18,7 +18,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: CaioGomes
-  description: "Hi! I'm Caio and I work with DevOps and Cloud. I usually write about AWS, Pipelines, Python and Linux."
+  description: "Caio Gomes website"
   keywords: [Blog, Portfolio, DevOps]
   author: Caio Gomes
   # author: ["Me", "You"] # multiple authors
@@ -53,7 +53,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: "Welcome! \U0001F44B"
-    subtitle: "This is the website of Caio Gomes. I usually post about DevOps, AWS and Linux."
+    subtitle: "Hi! I'm Caio and I work with DevOps and Cloud. I usually write about AWS, Pipelines, Python and Linux."
     imageUrl: "images/general/face-photo.jpeg"
     imageWidth: 120
     imageHeight: 120
