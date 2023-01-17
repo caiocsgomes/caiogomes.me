@@ -9,14 +9,14 @@ draft: false
 
 [**GitHub actions**](https://docs.github.com/en/actions/quickstart) is an automation service that allows us to automate all kinds of repository related processes and actions. Using GitHub Actions we provide GitHub with a *yml* file describing our *workflow* in *steps*, and it will run the workflow based on an *event* that can be a *push*. This way everytime we make a push to the repository it will run the actions described in the yml file with our repository. This is perfect to build **CI/CD** pipelines.
 
-[**Hugo**](https://gohugo.io/) is a *static website generator* that converts *Markdown* files (the .md files) into websites. This way instead of writing in HTML we can write in Markdown that is pretty easier. Another benefit of Hugo is we can use [*themes*](https://themes.gohugo.io/), which are premade websites with structure and css already incorporated into it. This way we don't need to worry with style if we are able to use one of the themes with our project. This blog is built with Hugo and uses the [PaperMod](https://themes.gohugo.io/themes/hugo-papermod/) theme, so when I need to write something on it I just write Markdown and run Hugo on it to create the website (HTML+CSS+JS).
+[**Hugo**](https://gohugo.io/) is a *static website generator* that converts *Markdown* files (the .md files) into websites. This way instead of writing in HTML we can write in Markdown that is pretty easier. Another advantage of Hugo is that we can use [*themes*](https://themes.gohugo.io/), which are premade websites with structure and css already incorporated into it. This way we don't need to worry with style since we are able to use one of the themes in our project. This blog is built with Hugo and uses the [PaperMod](https://themes.gohugo.io/themes/hugo-papermod/) theme, so when I need to write something on it I just write Markdown and run Hugo on it to create the website (HTML+CSS+JS).
 
-This blog uses both *Hugo* and *GitHub Actions* and the [repository](https://github.com/caiocsgomes/caiogomes.me) has everything we are going to talk here implemented and working. Our objective is to use Github Actions to build a website using Hugo and deploy it on S3 to have a static website. To achive this we need to follow these steps:
+This blog uses both *Hugo* and *GitHub Actions* and the [repository](https://github.com/caiocsgomes/caiogomes.me) has everything we are going to discuss here implemented and working. Our objective is to use Github Actions to build a website using Hugo and deploy it on S3 to have a static website. To achive this we need to follow these steps:
 
 1. Install Hugo in the machine that will build the app
 2. Install de AWS CLI in order to upload the app to S3
-3. Set the credentials in the machine so that have access to the AWS account
-4. Checkout the repository
+3. Set the credentials in the machine so that it has access to the AWS account
+4. Check out the repository
 5. Run Hugo on the repository to build the app
 6. Upload the files to S3
 7. Optional. Invalidate the Cloufront distribution in case we are using it to cache the website.
@@ -126,7 +126,7 @@ jobs:
       BUCKET_NAME: caiogomes.me
 ```
 
-After it we can use it in any step following the same syntax `${{ env.VARIABLE_NAME }}`
+Afterwads we can use it in any step following the same syntax `${{ env.VARIABLE_NAME }}`
 
 
 ## Hugo CLI
