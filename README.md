@@ -30,4 +30,6 @@ hugo server
 
 # Creating a Hugo website and deploying it so S3 using Github Actions
 
-https://caiogomes.me/posts/gha-pipeline-hugo/dependson-with-cloudformation/
+This is the current project explained step by step
+
+https://caiogomes.me/posts/gha-pipeline-hugo/
