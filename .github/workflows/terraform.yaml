@@ -27,12 +27,11 @@ jobs:
         aws-region: ${{ env.AWS_REGION }}
     - name: install terraform
       uses: hashicorp/setup-terraform@v2
+    - name: changing directory
+      run: cd infra
     - name: terraform init
       run: terraform init
-      working-directory: infra
     - name: terraform plan
       run: terraform plan
-      working-directory: infra
     - name: terraform apply
       run: terraform apply -auto-approve
-      working-directory: infra
