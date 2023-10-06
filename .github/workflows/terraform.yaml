@@ -41,6 +41,7 @@ jobs:
   
   execute-plan:
     runs-on: ubuntu-latest
+    needs: plan-and-approve
     environment: production # This is required for the approval step
     env:
       AWS_REGION: sa-east-1
