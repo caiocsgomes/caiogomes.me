@@ -1,6 +1,6 @@
 ---
 title: "The basics of Github Actions"
-date: 2023-01-22T22:00:00-03:00
+date: 2030-01-22T22:00:00-03:00
 slug: gha-notes
 category: github-actions
 description: "A summary of Github Actions"
