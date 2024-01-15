@@ -1,5 +1,5 @@
 resource "aws_acm_certificate" "cert" {
-  domain_name       = "caiogomes.me"
+  domain_name       = var.project_name
   validation_method = "DNS"
 
   lifecycle {

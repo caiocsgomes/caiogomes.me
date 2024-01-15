@@ -38,7 +38,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     prefix          = "logs"
   }
 
-  aliases = ["caiogomes.me"]
+  aliases = [var.project_name]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
