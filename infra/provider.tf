@@ -14,10 +14,10 @@ terraform {
 }
 
 provider "aws" {
-  region = "sa-east-1"
+  region = "sa-east-1" # Region to deploy
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-1" # Don't change this region, it's used for ACM
   alias  = "useast1"
 }
