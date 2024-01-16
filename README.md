@@ -11,22 +11,22 @@ I'll describe how to run the application, how to build the infrastructure using 
 
 ## Running it locally
 
-1. Install Hugo
+1\. Install Hugo
 
 https://gohugo.io/installation/
 
-2. Clone the repo
+2\. Clone the repo
 ```bash
 git clone --recurse-submodules https://github.com/caiocsgomes/caiogomes.me.git
 ```
 
-3. Change to the app folder
+3\. Change to the app folder
 
 ```bash
 cd caiogomes.me/app
 ```
 
-4. Start the app using Hugo
+4\. Start the app using Hugo
 
 ```bash
 hugo server
