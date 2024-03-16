@@ -5,7 +5,7 @@ on:
   push:
     paths:
       - 'app/**'
-      - '.github/workflows/deploy.yml'
+      - '.github/workflows/deploy.yaml'
     branches:
       - master
 permissions:
