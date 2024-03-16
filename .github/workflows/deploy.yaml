@@ -28,6 +28,8 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          submodules: 'true'
       - name: Build
         run: cd app/ && hugo
       - name: Upload files to S3
