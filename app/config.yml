@@ -22,10 +22,9 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  # ShowReadingTime: true
+  # ShowPostNavLinks: true
+  # ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -53,24 +52,24 @@ params:
     buttons:
       - name: Blog
         url: posts
-    # - name: Projects
-    #   url: projects
+        # - name: Projects
+        #   url: projects
   # home-info mode
-  homeInfoParams:
-    Title: "Welcome! 👋"
-    Content: "This is the website of **Chanin Nantasenamat, Ph.D.** and I create educational content on data science and bioinformatics. Some of you may know me as the **Data Professor**."
+  # homeInfoParams:
+  #   Title: "Welcome! 👋"
+  #   Content: "This is the website of **Chanin Nantasenamat, Ph.D.** and I create educational content on data science and bioinformatics. Some of you may know me as the **Data Professor**."
   socialIcons:
     - name: linkedin
       url: "https://www.linkedin.com/in/caiocsgomes/"
     - name: github
       url: "https://github.com/caiocsgomes"
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
@@ -101,10 +100,10 @@ menu:
       name: Blog
       url: /posts
       weight: 1
-  # - identifier: projects
-  #   name: Projects
-  #   url: /projects/
-  #   weight: 2
+      # - identifier: projects
+      #   name: Projects
+      #   url: /projects/
+      #   weight: 2
 #- identifier: tags
 #  name: tags
 #  url: /tags/
