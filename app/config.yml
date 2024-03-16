@@ -3,18 +3,14 @@ baseURL: "https://caiogomes.me"
 title: Caio Gomes
 paginate: 100
 theme: PaperMod
-
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
 #googleAnalytics: UA-123-45
-
 minify:
   disableXML: true
   minifyOutput: true
-
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: CaioGomes
@@ -26,7 +22,6 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
-
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
@@ -39,20 +34,17 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
-
   label:
     text: "Caio Gomes"
     # icon: "/images/icons/programmer.png"
     iconHeight: 35
-  
   assets:
-    disableHLJS: true 
+    disableHLJS: true
     favicon: "/images/icons/programmer.png"
-
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: "Welcome! \U0001F44B"
+    title: "Welcome! 👋"
     subtitle: "Hi! I'm Caio and I work with DevOps and Cloud. I usually write about AWS, Pipelines, Python and Linux."
     imageUrl: "images/general/face-photo.jpeg"
     imageWidth: 120
@@ -61,24 +53,17 @@ params:
     buttons:
       - name: Blog
         url: posts
-      # - name: Projects
-      #   url: projects
-
+    # - name: Projects
+    #   url: projects
   # home-info mode
   homeInfoParams:
-    Title: "Welcome! \U0001F44B"
-    Content: "This is the website of **Chanin Nantasenamat, Ph.D.** and
-    I create educational content on data science and bioinformatics.
-    Some of you may know me as the **Data Professor**."
-
+    Title: "Welcome! 👋"
+    Content: "This is the website of **Chanin Nantasenamat, Ph.D.** and I create educational content on data science and bioinformatics. Some of you may know me as the **Data Professor**."
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/caiocsgomes"
     - name: linkedin
       url: "https://www.linkedin.com/in/caiocsgomes/"
     - name: github
       url: "https://github.com/caiocsgomes"
-
   analytics:
     google:
       SiteVerificationTag: "XYZabc"
@@ -86,20 +71,16 @@ params:
       SiteVerificationTag: "XYZabc"
     yandex:
       SiteVerificationTag: "XYZabc"
-
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: false # hide on single page
-
-
   editPost:
-#    URL: "https://github.com/chanin-www/content"
-#    Text: "Suggest Changes" # edit text
+    #    URL: "https://github.com/chanin-www/content"
+    #    Text: "Suggest Changes" # edit text
     URL: ""
     Text: "" # edit text
     appendFilePath: true # to append file path to Edit link
-
   # for search
   # https://fusejs.io/api/options.html
   fuseOpts:
@@ -120,15 +101,14 @@ menu:
       name: Blog
       url: /posts
       weight: 1
-    # - identifier: projects
-    #   name: Projects
-    #   url: /projects/
-    #   weight: 2
+  # - identifier: projects
+  #   name: Projects
+  #   url: /projects/
+  #   weight: 2
+#- identifier: tags
+#  name: tags
+#  url: /tags/
+#  weight: 4
 
-    #- identifier: tags
-    #  name: tags
-    #  url: /tags/
-    #  weight: 4
 markup:
   defaultMarkdownHandler: goldmark
-
