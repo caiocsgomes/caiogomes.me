@@ -1,5 +1,6 @@
 ---
 title: "Using a bash script with sed to clean data"
+layout: "categories"
 date: 2020-08-21T23:15:00+07:00
 slug: bash-sed
 category: bash
