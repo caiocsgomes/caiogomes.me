@@ -1,4 +1,3 @@
-# Workflow name
 name: S3 Deploy
 on:
   workflow_dispatch:
