@@ -17,7 +17,7 @@ https://gohugo.io/installation/
 
 2\. Clone the repo
 ```bash
-git clone --recurse-submodules https://github.com/caiocsgomes/caiogomes.me.git
+git clone https://github.com/caiocsgomes/caiogomes.me.git
 ```
 
 3\. Change to the app folder
