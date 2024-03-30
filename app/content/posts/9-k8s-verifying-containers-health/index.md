@@ -1,31 +1,32 @@
 ---
-title: "Here you will place the title of the post"
+title: "Kubernetes: verifying container's health"
 date: 2040-01-15T11:18:00-03:00
-slug: "here-you-will-place-the-slug-of-the-post" # The unique identifier of the post in the URL, if you place a new slug the URL will change, i this case it would be https://caiogomes.me/posts/here-you-will-place-the-slug-of-the-post/
-category: gategory # The category of the post, it will be used to group posts in the same category. Not using for now
-description: "Description of the post, it will be used in the meta description of the post"
+slug: "kubernetes-verifying-containers-health" # The unique identifier of the post in the URL, if you place a new slug the URL will change, i this case it would be https://caiogomes.me/posts/here-you-will-place-the-slug-of-the-post/
+category: kubernetes # The category of the post, it will be used to group posts in the same category. Not using for now
+description: "In this post we will talk about how to verify if a container is healthy in Kubernetes"
 draft: false
 ---
 
-In this post we wil talk about lore ipsum blablabla
+## Types of health check
+## Default health check
+## Liveness probe
+## Readiness probe
+## Startup probe
 
-Just start the post here, it will be written in markdown. You can use the following as a template:
+
+<!-- Todos 
+- Read again the annotations and docs
+- Draw on procreate examples for each type of health check and probe
+-->
 
 
-REFERENCE: https://wordpress.com/support/markdown-quick-reference/
 
-<!-- Paragraphs and headers (if necessary) -->
-# Header 1
-lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl ultricies nunc, quis ul
 
-lore ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl ultricies nunc, quis ul. lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl ultricies nunc, quis ul
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl ultricies nunc, quis ul
 
-## Header 2
-lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl ultricies nunc, quis ul
 
-### Header 3
+
+
 
 <!-- Make a link -->
 [**GitHub actions**](https://docs.github.com/en/actions/quickstart)
