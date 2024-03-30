@@ -7,15 +7,16 @@ description: "Description of the post, it will be used in the meta description o
 draft: false
 ---
 
+Describe here about the post
+
 In this post we wil talk about lore ipsum blablabla
 
 Just start the post here, it will be written in markdown. You can use the following as a template:
 
-
 REFERENCE: https://wordpress.com/support/markdown-quick-reference/
 
 <!-- Paragraphs and headers (if necessary) -->
-# Header 1
+## First header 1 (I'm starting usually with ##)
 lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl ultricies nunc, quis ul
 
 lore ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl ultricies nunc, quis ul. lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl ultricies nunc, quis ul
