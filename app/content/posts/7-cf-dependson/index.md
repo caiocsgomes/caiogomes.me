@@ -1,6 +1,6 @@
 ---
 title: "How to use DependsOn attribute in CloudFormation"
-date: 2021-07-22T23:15:00+07:00
+date: 3021-07-22T23:15:00+07:00
 slug: dependson-with-cloudformation
 category: cloudformation
 description: "A guide explaining how the attribute DependsOn works in CloudFormation and how to use it"

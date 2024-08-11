@@ -1,6 +1,6 @@
 ---
 title: "SAM (Cloudformation) template for a serverless ETL job"
-date: 2021-04-27T23:15:00+07:00
+date: 3021-04-27T23:15:00+07:00
 slug: cloudformation-sam-serverless
 category: cloudformation
 description: "On this post I'll explain how SAM can be used to model the resources needed for an ETL job that converts a csv file in a S3 bucket into a dynamodb table using lambda"

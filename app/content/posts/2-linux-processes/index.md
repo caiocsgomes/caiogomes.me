@@ -1,6 +1,6 @@
 ---
 title: "Linux processes"
-date: 2020-08-21T23:15:00+07:00
+date: 3020-08-21T23:15:00+07:00
 slug: linux-processes
 category: linux
 description: "An introduction to how processes work on Linux and their role on Docker"

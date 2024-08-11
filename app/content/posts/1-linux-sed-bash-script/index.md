@@ -1,7 +1,7 @@
 ---
 title: "Using a bash script with sed to clean data"
 layout: "categories"
-date: 2020-08-21T23:15:00+07:00
+date: 3020-08-21T23:15:00+07:00
 slug: bash-sed
 category: bash
 description: "A post explaining the basics of sed to clean flat files before importing them to a database"

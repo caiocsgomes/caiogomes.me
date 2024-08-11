@@ -1,6 +1,6 @@
 ---
 title: "Writing more pythonic code"
-date: 2021-05-02T23:15:00+07:00
+date: 3021-05-02T23:15:00+07:00
 slug: python-pythonic
 category: python
 description: "Tips about writing cleaner code in python using its resources for a more pythonic approach"
