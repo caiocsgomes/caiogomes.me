@@ -1,5 +1,5 @@
 ---
-title: "Using GitHub Actions to deploy a Hugo website to S3"
+title: "GitHub Actions: deploying a website to S3"
 date: 2023-01-15T11:18:00-03:00
 slug: gha-pipeline-hugo
 category: github-actions
