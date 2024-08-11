@@ -6,7 +6,6 @@ category: argocd # The category of the post, it will be used to group posts in t
 description: "This post goes over an implementation of app of apps using helm to automate manifests generation for helm charts and plain k8s manifests"
 draft: false
 ---
-## An implementation of the App of Apps pattern using ArgoCD
 
 This arcticle describes a practical implementation of the app of apps pattern using argocd with a real-world example using helm templating.
 This pattern in argocd allows to create a single application (let's call it *app-of-apps* for convenience) that contains all the other applications that we want to deploy in the cluster.
